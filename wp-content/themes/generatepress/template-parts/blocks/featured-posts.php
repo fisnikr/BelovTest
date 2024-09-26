@@ -3,6 +3,7 @@
 
 
 <div class="featured-posts grid grid-cols-1 md:grid-cols-4 gap-6 bg-[#D9D4C7] py-8 px-4 md:py-16 md:px-24">
+    
     <!-- Main Featured Post -->
     <div class="md:col-span-2 p-4 rounded-lg bg-white">
         <img class="w-full object-cover rounded-lg" src="<?php echo esc_url(get_field('main_image')); ?>" alt="">

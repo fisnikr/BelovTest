@@ -84,23 +84,6 @@ if ( ! function_exists( 'generate_setup' ) ) {
 
 
 
-function register_acf_block_types() {
-    // Register the custom block
-    acf_register_block_type(array(
-        'name'              => 'test-task-block',
-        'title'             => __('Test Task Block'),
-        'description'       => __('A custom Gutenberg block for the test task.'),
-        'render_template'   => 'template-parts/blocks/test-task-block.php', // This is the path to the block template file.
-        'category'          => 'layout', // Choose a category like "layout", "widgets", etc.
-        'icon'              => 'admin-comments', // Optional icon
-        'keywords'          => array( 'acf', 'custom', 'block' ),
-    ));
-}
-
-// Check if ACF is available and register the block
-if( function_exists('acf_register_block_type') ) {
-    add_action('acf/init', 'register_acf_block_types');
-}
 
 
 function register_featured_posts_block() {
